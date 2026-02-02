@@ -37,13 +37,8 @@ theme: # Тема сайта, информация о ее параметрах
 
 nav: # Структура сайта (на корневом уровне)
   - Главная страница: index.md
-  - "Markdown: базовый синтаксис": markdown.md
-  - "Тех.минимум по git": git-for-tech-writer.md
-  - "Стайлгайд для пошаговых инструкций": styleguide.md
   - "Мой домашний проект":
       - pet-project/notesapp.md
-      - "Настройка MkDocs": pet-project/mkdocs-setup.md
-  - "Вебинары": meetings.md
   - "Домашние задания":
       - "Домашнее задание N2": subfolder/subsubfolder/index.md
 
