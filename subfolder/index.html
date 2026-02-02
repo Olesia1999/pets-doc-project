@@ -78,6 +78,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#notesapp" class="md-skip">
+          Перейти к содержанию
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -733,7 +738,37 @@
 
   <h1>Index</h1>
 
-
+<h2 id="notesapp">Архитектура приложения NotesApp</h2>
+<p>Ниже представлена схема архитектуры приложения NotesApp. На схеме изображена демонстрация взаимодействия клиентского приложения с сервером и базой данных.</p>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="docs/images/arh.png" data-desc-position="bottom"><img alt="Архитектура NotesApp" src="docs/images/arh.png"></a></p>
+<h3 id="1-user-interface">1️ Клиентское приложение (User Interface)</h3>
+<ul>
+<li>Платформы: мобильное (iOS, Android), веб-приложение  </li>
+<li>Основные функции:  </li>
+<li>Создание и редактирование заметок  </li>
+<li>Поиск и фильтры по заметкам  </li>
+<li>Взаимодействует с сервером через <strong>API</strong> по HTTPS (REST)  </li>
+<li>Отображает данные в интерфейсе, полученные от сервера</li>
+</ul>
+<h3 id="2-backend-api">2️ Сервер (Backend / API)</h3>
+<ul>
+<li>Основная роль: обработка запросов от клиентов и управление данными  </li>
+<li>Функции:  </li>
+<li>Аутентификация и авторизация пользователей  </li>
+<li>Обработка запросов для заметок (Create, Read, Update, Delete)  </li>
+<li>Логика синхронизации между устройствами  </li>
+<li>Общается с:  </li>
+<li>Клиентским приложением (через API)  </li>
+<li>Базой данных для хранения пользователей и заметок  </li>
+</ul>
+<h3 id="3-database">3️ База данных (Database)</h3>
+<ul>
+<li>Тип: SQL  </li>
+<li>Хранит данные:  </li>
+<li><strong>Пользователи:</strong> ID пользователя, email,</li>
+<li><strong>Заметки:</strong> ID заметки, user_id, заголовок, содержание, дата создания/изменения  </li>
+<li>Сервер делает запросы к базе для сохранения, обновления и получения данных  </li>
+</ul>
 
 
 
