@@ -35,11 +35,11 @@ theme: # Тема сайта, информация о ее параметрах
     - search.highlight
     - content.code.copy
 
-nav: # Структура сайта (на корневом уровне)
+nav:
   - Главная страница: index.md
-  - "Мой домашний проект":
-      - pet-project/notesapp.md
-  - "Домашние задания":
+  - Мой домашний проект:
+      - NotesApp: pet-project/notesapp.md
+  - Домашние задания:
       - "Домашнее задание N2": subfolder/subsubfolder/index.md
 
 plugins:
