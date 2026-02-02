@@ -38,7 +38,7 @@ theme: # Тема сайта, информация о ее параметрах
 nav:
   - Главная страница: index.md
   - Мой домашний проект:
-      - NotesApp: pet-project/notesapp.md
+      - NotesApp: subfolder/notesapp.md
   - Домашние задания:
       - "Домашнее задание N2": subfolder/subsubfolder/index.md
 
