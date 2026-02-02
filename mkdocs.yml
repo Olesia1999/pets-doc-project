@@ -49,6 +49,7 @@ nav: # Структура сайта (на корневом уровне)
 
 plugins:
   - search
+  - glightbox
 
 markdown_extensions:
   - admonition
