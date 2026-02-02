@@ -41,7 +41,7 @@ nav: # Структура сайта (на корневом уровне)
   - "Тех.минимум по git": git-for-tech-writer.md
   - "Стайлгайд для пошаговых инструкций": styleguide.md
   - "Мой домашний проект":
-      - pet-project/index.md
+      - pet-project/notesapp.md
       - "Настройка MkDocs": pet-project/mkdocs-setup.md
   - "Вебинары": meetings.md
   - "Домашние задания":
