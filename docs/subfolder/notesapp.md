@@ -2,8 +2,7 @@
 
 Ниже представлена схема архитектуры приложения NotesApp. На схеме изображена демонстрация взаимодействия клиентского приложения с сервером и базой данных.
 
-![Архитектура NotesApp](images/arh.png)
-
+![Архитектура NotesApp](../images/arh.png)
 
 ### 1️ Клиентское приложение (User Interface)
 
@@ -34,3 +33,4 @@
 - Сервер делает запросы к базе для сохранения, обновления и получения данных  
 
 
+scm-history-item:/Users/olesiaekaterinchuk/Documents/pet%20project?%7B%22repositoryId%22%3A%22scm0%22%2C%22historyItemId%22%3A%228a5fc7186dce2a74fa24d8a40d26536b0d33bc4c%22%2C%22historyItemParentId%22%3A%2262c1d1bb7bdcd3d654ecfd290e9c7fcfa73c5d19%22%2C%22historyItemDisplayId%22%3A%228a5fc71%22%7D
