@@ -2,6 +2,9 @@ site_name: Portfolio # Название сайта
 site_description: "Профессиональное портфолио" # Описание сайта, добавляется в meta-теги
 
 theme: # Тема сайта, информация о ее параметрах
+theme:
+  palette: # Настройки тем
+    - scheme: my-scheme
   name: material # Название темы
   logo: images/logo.jpg # Ссылка на логотип сайта, логотип добавляется в папку `docs/images`
   font:
@@ -9,18 +12,18 @@ theme: # Тема сайта, информация о ее параметрах
     code: Roboto Mono # Шрифт для текста кода
   language: ru # Язык
   palette: # Настройки светлой и тёмной тем
-    - scheme: default
-      toggle:
-        icon: material/weather-sunny # Иконка для активации светлой темы
-        name: "Выключить солнышко" # Всплывающий текст-подсказка
-      primary: pink # Основной цвет
-      accent: purple # Акцентный цвет
-    - scheme: slate
-      toggle:
-        icon: material/weather-night
-        name: "Позвать солнышко"
-      primary: deep purple
-      accent: blue
+   ##scheme: default
+      ##toggle:
+        ##icon: material/weather-sunny # Иконка для активации светлой темы
+       ## name: "Выключить солнышко" # Всплывающий текст-подсказка
+      ##primary: pink # Основной цвет
+      ##accent: purple # Акцентный цвет
+  ##  - scheme: slate
+    ##  toggle:
+     ##   icon: material/weather-night
+     ##   name: "Позвать солнышко"
+     ## primary: deep purple
+      ##accent: blue--
   features: # настройки функциональностей темы
     - navigation.sections # Добавление разделов верхнего уровня в боковом меню
     - navigation.path # Хлебные крошки
@@ -41,9 +44,16 @@ nav:
       - NotesApp: subfolder/notesapp.md
   - Домашние задания:
       - "Домашнее задание N2": subfolder/subsubfolder/index.md
+  - Материалы курса:
+    - index.md
+    - API-дока: docs/swagger.md
 
 plugins:
   - search
+  - plantuml:
+      puml_url: https://www.plantuml.com/plantuml/
+  - redoc-tag
+  - swagger-ui-tag
   - glightbox
 
 markdown_extensions:
@@ -52,6 +62,10 @@ markdown_extensions:
   - attr_list
   - md_in_html
   - def_list
+  -  pymdownx.snippets:
+      base_path:
+        - docs
+
   - pymdownx.tabbed:
       alternate_style: true
   - pymdownx.details
@@ -61,5 +75,8 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+extra_css:
+  - stylesheets/extra.css
 
 
