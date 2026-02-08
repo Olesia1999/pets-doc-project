@@ -1,1 +1,1 @@
-<swagger-ui src="docs/openapi.yml"/>
+<swagger-ui src="openapi.yml"/>
