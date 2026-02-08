@@ -46,7 +46,7 @@ nav:
       - "Домашнее задание N2": subfolder/subsubfolder/index.md
   - Материалы курса:
     - index.md
-    - API-дока: docs/swagger.md
+    - API-дока: swagger.md
 
 plugins:
   - search
